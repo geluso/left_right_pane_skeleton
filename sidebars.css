@@ -1,0 +1,27 @@
+#left, #right, #content {
+	position: absolute;
+}
+
+#left, #right {
+	width: 300px;
+}
+
+#nav {
+	background-color: green;
+	padding: 1em;
+}
+
+#left {
+	background-color: yellow;
+	left: 0;
+}
+
+#content {
+	background-color: red;
+	left: 300px;
+}
+
+#right {
+	background-color: blue;
+	right: 0;
+}

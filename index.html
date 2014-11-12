@@ -1,0 +1,50 @@
+<!doctype html>
+<html ng-app="SidebarsApp">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+		<script src="sidebars.js"></script>
+		<link rel="stylesheet" href="sidebars.css">
+	</head>
+	<body ng-controller="SidebarsController">
+		<div id="nav">
+			this is the navigation bar
+			<div class="btn btn-default" ng-click="toggleLeft()">toggle left</div>
+			<div class="btn btn-default" ng-click="toggleRight()">toggle right</div>
+		</div>
+		<div id="left">
+			left side bar {{leftWidth}}
+		</div>
+		<div id="content">
+			<div class="container-fluid">
+				<h1>header</h1>
+				<div class="row">
+					<div class="col-xs-1">
+						ace
+					</div>
+					<div class="col-xs-7">
+						bar
+					</div>
+					<div class="col-xs-3">
+						car
+					</div>
+					<div class="col-xs-1">
+						dar
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="right">
+			right side bar {{rightWidth}}
+		</div>
+	</body>
+</html>
