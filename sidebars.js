@@ -4,8 +4,6 @@ $(document).ready(function() {
 
 	$("#content").width(contentWidth);
 
-	report()
-
 	var navHeight = $("#nav").outerHeight();
 	var contentHeight = $(document).outerHeight() - navHeight;
 	$("#left, #right, #content").height(contentHeight);
